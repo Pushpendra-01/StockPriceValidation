@@ -1,4 +1,4 @@
-package LTIM.Assignment;
+package LinksRetrieval;
 import java.time.Duration;
 import java.util.List;
 

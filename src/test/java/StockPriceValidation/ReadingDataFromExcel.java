@@ -1,4 +1,4 @@
-package dataDriven_Assignment;
+package StockPriceValidation;
 
 import org.apache.poi.ss.usermodel.*;
 
@@ -47,12 +47,18 @@ public class ReadingDataFromExcel {
         }
     }
 
-	/*
-	 * private static String getValueCellValue(Cell cell) { switch
-	 * (cell.getCellType()) { case STRING: return cell.getStringCellValue(); case
-	 * NUMERIC: // Handle numeric cells return
-	 * String.valueOf(cell.getNumericCellValue()); default: return ""; } }
-	 */
+    private static String getValueCellValue(Cell cell) {
+        switch (cell.getCellType()) {
+            case STRING:
+                return cell.getStringCellValue();
+            case NUMERIC:
+                // Handle numeric cells
+                return String.valueOf(cell.getNumericCellValue());
+            default:
+                return "";
+        }
+    }
+
     public static void main(String[] args) {
         // Provide the file path to your Excel file
         String filePath = System.getProperty("user.dir") + "//src//test//java//resource//dataDriven.xlsx";

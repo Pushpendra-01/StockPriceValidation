@@ -1,4 +1,4 @@
-package dataDriven_Assignment;
+package StockPriceValidation;
 
 public class ReadingDataFromWeb {
 
