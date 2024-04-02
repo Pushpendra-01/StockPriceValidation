@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/LinksRetrieval\/KarateApi[1:19]","start":1712082361585,"end":1712082376159,"title":"src\/test\/java\/LinksRetrieval\/KarateApi[1:19] 23:56:01.585-23:56:16.159 Getting all the booking id's"},{"id":2,"group":1,"content":"src\/test\/java\/LinksRetrieval\/KarateApi[2:26]","start":1712082376167,"end":1712082377861,"title":"src\/test\/java\/LinksRetrieval\/KarateApi[2:26] 23:56:16.167-23:56:17.861 Getting single booking"},{"id":3,"group":1,"content":"src\/test\/java\/LinksRetrieval\/KarateApi[3:36]","start":1712082377869,"end":1712082378750,"title":"src\/test\/java\/LinksRetrieval\/KarateApi[3:36] 23:56:17.869-23:56:18.750 Create Booking Validation","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/LinksRetrieval\/KarateApi[4:51]","start":1712082378765,"end":1712082379584,"title":"src\/test\/java\/LinksRetrieval\/KarateApi[4:51] 23:56:18.765-23:56:19.584 Update Booking Validation","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/LinksRetrieval\/KarateApi[5:66]","start":1712082379591,"end":1712082381310,"title":"src\/test\/java\/LinksRetrieval\/KarateApi[5:66] 23:56:19.591-23:56:21.310 Partially updating the booking details"},{"id":6,"group":1,"content":"src\/test\/java\/LinksRetrieval\/KarateApi[6:84]","start":1712082381316,"end":1712082382986,"title":"src\/test\/java\/LinksRetrieval\/KarateApi[6:84] 23:56:21.316-23:56:22.986 Booking deletion validation","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

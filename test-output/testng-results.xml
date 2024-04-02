@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-30T09:27:53 IST" name="Default suite" finished-at="2024-03-30T09:28:11 IST" duration-ms="18137">
+  <suite started-at="2024-04-02T23:37:48 IST" name="Default suite" finished-at="2024-04-02T23:39:57 IST" duration-ms="128526">
     <groups>
     </groups>
-    <test started-at="2024-03-30T09:27:53 IST" name="Default test" finished-at="2024-03-30T09:28:11 IST" duration-ms="18137">
-      <class name="LTIM.Assignment.FlipkartLinks">
-        <test-method is-config="true" signature="initializingBrowser()[pri:0, instance:LTIM.Assignment.FlipkartLinks@61c4eee0]" started-at="2024-03-30T09:27:53 IST" name="initializingBrowser" finished-at="2024-03-30T09:28:11 IST" duration-ms="17931" status="PASS">
+    <test started-at="2024-04-02T23:37:48 IST" name="Default test" finished-at="2024-04-02T23:39:57 IST" duration-ms="128526">
+      <class name="StockPriceValidation.EndToEnd">
+        <test-method signature="testTableDataToExcel()[pri:0, instance:StockPriceValidation.EndToEnd@909217e]" started-at="2024-04-02T23:37:48 IST" name="testTableDataToExcel" finished-at="2024-04-02T23:39:57 IST" duration-ms="128451" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializingBrowser -->
-        <test-method signature="findingAllTheAvailableLinksByStream()[pri:0, instance:LTIM.Assignment.FlipkartLinks@61c4eee0]" started-at="2024-03-30T09:28:11 IST" name="findingAllTheAvailableLinksByStream" finished-at="2024-03-30T09:28:11 IST" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findingAllTheAvailableLinksByStream -->
-      </class> <!-- LTIM.Assignment.FlipkartLinks -->
+        </test-method> <!-- testTableDataToExcel -->
+      </class> <!-- StockPriceValidation.EndToEnd -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LTIM.Assignment.FlipkartLinks">
+      <class name="StockPriceValidation.EndToEnd">
         <methods>
-          <include name="findingAllTheAvailableLinks"/>
+          <include name="testTableDataToExcel"/>
         </methods>
-      </class> <!-- LTIM.Assignment.FlipkartLinks -->
+      </class> <!-- StockPriceValidation.EndToEnd -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
