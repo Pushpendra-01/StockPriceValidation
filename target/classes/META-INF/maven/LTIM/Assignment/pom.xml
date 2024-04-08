@@ -50,20 +50,7 @@
     <artifactId>poi-ooxml</artifactId>
     <version>5.2.5</version>
 </dependency>
- <!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-core -->
-    <dependency>
-      <groupId>com.intuit.karate</groupId>
-      <artifactId>karate-core</artifactId>
-      <version>1.4.0.RC3</version>
-    </dependency>
-
-    <!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-apache -->
-    <dependency>
-      <groupId>com.intuit.karate</groupId>
-      <artifactId>karate-apache</artifactId>
-      <version>0.9.6</version>
-      <scope>test</scope>
-    </dependency>
+   
   </dependencies>
 
   <build>
